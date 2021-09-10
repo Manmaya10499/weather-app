@@ -1,12 +1,4 @@
-// console.log("zzzzzzzzzzzzzzzzzzzzzzz...");
 
-// fetch('http://localhost:3000/weather?address=padmabati,nayagarh,odisha').then((response)=>{
-//     response.json().then((data)=>{
-//       console.log(data)
-//     }).catch((error)=>{
-//         console.log(error);
-//     })
-// })
 
 const formdata = document.querySelector("form");
 const add = document.querySelector("input");
