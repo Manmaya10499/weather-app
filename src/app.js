@@ -3,6 +3,7 @@ const express = require("express");
 const hbs = require("hbs");
 const getUtils = require("./utils/utils");
 const app = express();
+const port = process.env.PORT || 3000;
 app.use(express.static(path.join(__dirname, '/public')))
 
 const templatePath = path.join(__dirname, "../templates/views");
@@ -103,7 +104,8 @@ app.get("/weather", (req, res) => {
 });
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
+  console.log("application is running on "+port);
 });
 
 

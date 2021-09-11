@@ -9,7 +9,7 @@ formdata.addEventListener("submit", (e) => {
     e.preventDefault(); // will prevent the default behaviour of regreshing the browser
     p1.textContent = 'Loading...';
     p2.textContent = '';
-  fetch('http://localhost:3000/weather?address='+address).then((response)=>{
+  fetch('/weather?address='+address).then((response)=>{
         response.json().then((data)=>{
             if (data.error) {
               p1.textContent = data.error;
